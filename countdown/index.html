@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Countdown</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+
+<div id="container">	
+<form id="frm">
+<h1>Ajoutez votre temps en seconde</h1>
+    <input type="text" id="secondes" name="secondes" value="0" size="1" maxlength="8" />
+    <br/>
+    <input class="button" type="button" id="btnct" value="ajoutez" />
+</form>
+<span id="decompte"></span><br/>
+
+<input class="button" type="button" value="Start" onclick="countdown()">
+<input class="button" type="button" value="Pause" onclick="cdpause()">
+<input class="button" type="button" value="Reset" onclick="cdreset()">
+</div>
+
+
+
+</body>
+</html>
